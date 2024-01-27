@@ -22,7 +22,7 @@ class RestExceptionHandler {
         }
         return ResponseEntity(
             ExceptionDetails(
-                title = "01 - Bad Request! Consult the documentation",
+                title = "Bad Request! Consult the documentation",
                 timestamp = LocalDateTime.now(),
                 status = HttpStatus.BAD_REQUEST.value(),
                 exception = ex.javaClass.toString(),
@@ -36,7 +36,7 @@ class RestExceptionHandler {
         return ResponseEntity.status(HttpStatus.CONFLICT)
             .body(
                 ExceptionDetails(
-                    title = "02 - Conflict! Consult the documentation",
+                    title = "Conflict! Consult the documentation",
                     timestamp = LocalDateTime.now(),
                     status = HttpStatus.CONFLICT.value(),
                     exception = ex.javaClass.toString(),
@@ -59,7 +59,7 @@ class RestExceptionHandler {
         return ResponseEntity.status(HttpStatus.BAD_REQUEST)
             .body(
                 ExceptionDetails(
-                    title = "03 - Bad Request! Consult the documentation",
+                    title = "Bad Request! Consult the documentation",
                     timestamp = LocalDateTime.now(),
                     status = HttpStatus.BAD_REQUEST.value(),
                     exception = ex.javaClass.toString(),
@@ -73,7 +73,7 @@ class RestExceptionHandler {
         return ResponseEntity.status(HttpStatus.BAD_REQUEST)
             .body(
                 ExceptionDetails(
-                    title = "04 - Bad Request! Consult the documentation",
+                    title = "Bad Request! Consult the documentation",
                     timestamp = LocalDateTime.now(),
                     status = HttpStatus.BAD_REQUEST.value(),
                     exception = ex.javaClass.toString(),
